@@ -13,6 +13,7 @@ public class Ej7 {
 		String[] palabras;
 		
 		
+		
 	}
 
 }
