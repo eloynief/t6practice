@@ -9,18 +9,19 @@ public class Ej5 {
 		/*creamos el array que guardara las letras y irá aumentando cada vez que aumentas en 1 el numero de letras
 		es decir, cuando escribimos una palabra, el contador aumenta al numero de letras que tiene la palabra*/
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Hola, bienvenido a: Acierta la contraseña, por favor introduzca un numero");
-		String[] guardado;
-		int [] tamano;
-		int letras=0;
-		String palabra=sc.next();
-		letras=palabra.length();
-		tamano= new int [letras];
+		String frase="",palabra;
 		
-		for(int i=0;i<tamano.length;i++) {
-			
+		System.out.println("Introduzca una palabra");
+		palabra=sc.next();
+		
+		while(!palabra.equalsIgnoreCase("word")) {
+		//va acumulando las palabras escritas en su valor
+		frase+= palabra+" ";
+		//print de la frase
+		System.out.println(frase);
+		//
+		palabra=sc.next();
 		}
-		
 		//cada vez que escribimos letra por letra, se va guardando en otr sitio
 		//se hace a partir de la lectura de lo escrito
 		
